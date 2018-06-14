@@ -1,0 +1,14 @@
+#head1{
+    width:50%;
+    background: #ccc;
+    display: inline-block;
+    margin:100px;
+}
+
+
+#tabtest{
+    position: absolute;
+    top:200px;
+
+
+}
