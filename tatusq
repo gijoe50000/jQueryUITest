@@ -1,0 +1,56 @@
+[1mdiff --git a/content.js b/content.js[m
+[1mindex 5ec88ca..d238bf4 100644[m
+[1m--- a/content.js[m
+[1m+++ b/content.js[m
+[36m@@ -5,6 +5,6 @@[m [m$(function() {[m
+ [m
+     $('#tabtest').tabs();[m
+ [m
+[31m-    $('#head1').delay(1000).toggle('explode');[m
+[32m+[m[32m    // $('#head1').delay(1000).toggle('explode');[m
+ [m
+ });[m
+\ No newline at end of file[m
+[1mdiff --git a/index.html b/index.html[m
+[1mindex dca8426..dbcbd9a 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -4,17 +4,21 @@[m
+     <meta charset="UTF-8">[m
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">[m
+[31m-    <link rel="stylesheet" href="style.css">[m
+[31m-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">[m
+[31m-    <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->[m
+[32m+[m[32m    <!-- <link rel="stylesheet" href="style.css"> -->[m
+[32m+[m[32m    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->[m
+[32m+[m[41m    [m
+[32m+[m[32m<link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.structure.css">[m
+[32m+[m[32m<link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.theme.css">[m
+[32m+[m[41m [m
+[32m+[m[32m<!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->[m
+     <title>jQueryUI Tab Test</title>[m
+ </head>[m
+[31m-<body>[m
+[31m-    <header><h1 id='head1'>jQueryUI Test</h1></header>[m
+[32m+[m[32m<body class='ui-widget'>[m
+[32m+[m[32m    <header><h1 id='head1'class='ui-widget-header ui-corner-all' >jQueryUI Test</h1></header>[m
+ [m
+ [m
+[31m-    <div id="tabtest">[m
+[31m-        <ul>[m
+[32m+[m[32m    <div id="tabtest" class="ui-widget">[m
+[32m+[m[32m        <ul class='ui-widget-content'>[m
+             <li  class="tablist"><a href="#tab-1">Tab 1</a></li>[m
+             <li class="tablist"><a href="#tab-2">Tab 2</a></li>[m
+             <li  class="tablist"><a href="#tab-3">Tab 3</a></li>[m
+[36m@@ -29,7 +33,8 @@[m
+ [m
+   [m
+     <script src="jquery-3.3.1.js"></script>[m
+[31m-    <script src="../jquery-ui-1.12.1/jquery-ui.min.js"></script>[m
+[32m+[m[32m    <!-- <script src="../jquery-ui-1.12.1/jquery-ui.min.js"></script> -->[m
+[32m+[m[32m    <script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>[m
+     <script src="content.js"></script>[m
+ [m
+ </body>[m

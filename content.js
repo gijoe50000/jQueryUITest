@@ -5,6 +5,6 @@ $(function() {
 
     $('#tabtest').tabs();
 
-    $('#head1').delay(1000).toggle('explode');
+    // $('#head1').delay(1000).toggle('explode');
 
 });
