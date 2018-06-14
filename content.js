@@ -29,6 +29,6 @@ $('#amount').val(
     '€'+ $range.slider('values',0)+'-€'+ $range.slider('values',1)
   
 );
-console.log( ui.value[0]);
+console.log( ui.values[0]);
 
 });
